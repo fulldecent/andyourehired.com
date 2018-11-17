@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>And You're Hired</title>
+    <link href="/assets/fonts.css" rel="stylesheet">
+    <link href="/assets/toolkit-minimal.css" rel="stylesheet">
+    <link href="/assets/application-minimal.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container pt-2">
+      <nav class="navbar navbar-light navbar-toggleable-sm navbar-static-top text-uppercase app-navbar mb-3">
+        <button class="navbar-toggler navbar-toggler-right hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="/">
+          <img src="/assets/logo-152.png" width="30" height="30" class="d-inline-block align-middle" alt="logo">
+          And You're Hired
+        </a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/search-resumes.html">Search resumes</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="/post-resume/login.html">Post your resume</a>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </nav>
+    </div>
+
+    <div class="bg-info">
+      <div class="container">
+        <form class="form-inline d-flex justify-content-center py-2">
+          <input class="form-control" placeholder="job experience" value="inside sales">
+          <input class="form-control mx-1" placeholder="location" value="mt. airy">
+          <button class="btn btn-primary">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container pt-4">
+      <div class="row">
+        <div class="col-md-3">
+          <p class="lead"><strong>inside sales</strong> resumes in <strong>mt. airy</strong></p>
+          <p class="text-muted">Sort by: <strong>relevance</strong>, <a href="?sort=posted">date posted</a></p>
+          <hr>
+          <form>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" checked="checked">
+                Has profile photo
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" checked="checked">
+                Has video introduction
+              </label>
+            </div>
+            <div class="form-group">
+              <label for="distance">Distance</label>
+              <select class="form-control" id="distance">
+                <option value="5">within 5 miles</option>
+                <option selected="selected" value="20">within 20 miles</option>
+                <option value="100">within 100 miles</option>
+                <option value="200">within 200 miles</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="updated">Last updated</label>
+              <select class="form-control" id="updated">
+                <option selected value="0">show all resumes</option>
+                <option value="7">past week</option>
+                <option value="31">past month</option>
+                <option value="186">past 6 months</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="base">Required base pay</label>
+              <select class="form-control" id="base">
+                <option selected value="0">show all resumes</option>
+                <option value="20000">$20k/year or less</option>
+                <option value="40000">$40k/year or less</option>
+                <option value="60000">$60k/year or less</option>
+                <option value="80000">$80k/year or less</option>
+                <option value="100000">$100k/year or less</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="experience-years">Work experience</label>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="experience-years" value="">
+                  Less than 1 year &nbsp; <small class="text-muted">4927+</small>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="experience-years" value="">
+                  1&ndash;2 years &nbsp; <small class="text-muted">4927+</small>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="experience-years" value="">
+                  3&ndash;5 years &nbsp; <small class="text-muted">4927+</small>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="experience-years" value="">
+                  6&ndash;10 years &nbsp; <small class="text-muted">4927+</small>
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="experience-years" value="">
+                  More than 10 years &nbsp; <small class="text-muted">4927+</small>
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+
+        </div>
+        <div class="col-md-9">
+          <p><a href="">Get matching resumes when they come in</a>.</p>
+          <p class="bg-light p-1 px-4 rounded" style="background: #f8f9fa!important">Select up to 20 candidates to contact</p>
+
+          <div class="media">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                <img class="mr-3 rounded" src="https://lorempixel.com/40/40/people" alt="Generic placeholder image">
+              </label>
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-0"><a target="_blank" href="/resumes/Melissa-Hennington-29875.html">Melissa Hennington</a> <span class="text-muted">- Upper Dublin, PA</span></h5>
+              <p class="mb-0">Sales associate <span class="text-muted">- Sesame Place</span></p>
+              <p class="mb-0">Sales assistant <span class="text-muted">- Philadelphia 76ers</span></p>
+              <p>Villanova University</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                <img class="mr-3 rounded" src="https://lorempixel.com/40/40/people?2" alt="Generic placeholder image">
+              </label>
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-0"><a target="_blank" href="/resumes/Melissa-Hennington-29875.html">Melissa Hennington</a> <span class="text-muted">- Upper Dublin, PA</span></h5>
+              <p class="mb-0">Sales associate <span class="text-muted">- Sesame Place</span></p>
+              <p class="mb-0">Sales assistant <span class="text-muted">- Philadelphia 76ers</span></p>
+              <p>Villanova University</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                <img class="mr-3 rounded" src="https://lorempixel.com/40/40/people?3" alt="Generic placeholder image">
+              </label>
+            </div>
+            <div class="media-body">
+              <h5 class="mt-0 mb-0"><a target="_blank" href="/resumes/Melissa-Hennington-29875.html">Melissa Hennington</a> <span class="text-muted">- Upper Dublin, PA</span></h5>
+              <p class="mb-0">Sales associate <span class="text-muted">- Sesame Place</span></p>
+              <p class="mb-0">Sales assistant <span class="text-muted">- Philadelphia 76ers</span></p>
+              <p>Villanova University</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5 pt-4 pb-5 bg-light" style="background: #f8f9fa!important">
+      <p class="text-center">
+        Copyright 2017 And You're Hired
+      </p>
+    </div>
+
+    <!-- Include jQuery (required) and the JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.js" integrity="sha256-gR6ZCR2s8m5B2pOtRyDld7PWjHRqxSfLBMWYNs2TxOw=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.1/js/tether.min.js" integrity="sha256-t8H1IetnBzCpquxG+UZlk4QqNKSnViFk0Qt44ZXdn/E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha256-DiWJXXyq81WlPRnDfGmgYZj2aOVCKyEdJ1l+2TmDuAs=" crossorigin="anonymous"></script>
+    <script src="/assets/toolkit.js"></script>
+    <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+  </body>
+</html>
